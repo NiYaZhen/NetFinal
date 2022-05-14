@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutEmp.cshtml";
+}
+
+<div class="jumbotron">
+    <h2 class="text-danger"><b><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>  啟程 > ></b></h2>
+    <p>「總要啟程後，才知沿途風景如何」</p>
+    <img src="@Url.Content("~/Assets/images/2.png")">
+</div>
+
+<div class="panel panel-warning">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h4><b><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 我是誰？</b></h4></div>
+    <div class="panel-body">
+        <p>我是目前就讀台中科技大學　資訊管理系　大二的學生</p>
+        <p>我叫做倪亞甄</p>
+        <p>今天想透過這個網頁，想與看見這個網頁的人，一同分享我的環島旅途</p>
+    </div>
+</div>
+
+<div class="panel panel-warning">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h4><b><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 為何想環島？</b></h4></div>
+    <div class="panel-body">
+        <p>小時候，總是待在家中，偶然在小時候，看到別人環島，才知道台灣這麼漂亮</p>
+        <p>因此許下環島這個夢想，想要看看外面的世界</p>
+    </div>
+</div>
+
+<div class="panel panel-warning">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h4><b><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> 環島的契機</b></h4></div>
+    <div class="panel-body">
+        <p>四月的連假，加上騎車已經半年的時間，時機到了，也當慶祝</p>
+        <p>覺得有些事情現在有熱忱不去做，就會失去熱忱，放棄行動</p>
+    </div>
+</div>
+
+
+
+@Html.ActionLink("回到開頭", "Index")

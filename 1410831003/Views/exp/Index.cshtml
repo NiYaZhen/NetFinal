@@ -1,0 +1,35 @@
+﻿@model _1410831003.ViewModels.imgCarouselViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutEmp.cshtml";
+}
+
+<div class="jumbotron">
+    <h2 class="text-danger"><b><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 結尾 > ></b></h2>
+    <p>「一段旅途的結束，開始期待下次遠行」</p>
+    <img src="@Url.Content("~/Assets/images/4.png")">
+</div>
+<div class="panel panel-success">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><h4><b><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 旅程的心得</b></h4></div>
+    <div class="panel-body">
+        <p>在環島前，都還覺得沒什麼，到快出發前才定好旅館、想逛的地方</p>
+        <p>環島前幾天，就越想越多，突然覺得很害怕會發生什麼事情（因為只有一個人）</p>
+        <p>但都已經從新年開始就決定要四月環島了，而且開學聽到網頁作業時也決定以環島作為主題</p>
+        <p>因此就上了吧，前一天騎去雲林還沒有環島的感覺，直到騎到台南，看到「台南市」的大路標</p>
+        <p>我才驚覺「我在環島了啊！」的感覺出現，雖然一直到現在還是覺得不可思議，很不切實際</p>
+        <p>路上因為我背著環島牌，騎在路上遇到很多人跟我說加油</p>
+        <p>還有遇到一樣在環島的人，也遇到車友上武嶺（然後跟我的背牌合影？）</p>
+        <p>而且每個晚上都去各縣市夜市逛（根本夜市狂）</p>
+        <p>路上還遇到一個阿北，他年輕時也想環島，但錯過了，他說「有些事情現在不做，以後到這個歲數就不想做了」</p>
+        <p>所以希望年輕時的我，可以依然熱忱對所有事情，並且去嘗試更多事情，做更多挑戰</p>
+        <p>下次要跟朋友們在環島一次</p>
+        <p>20歲，一人環島挑戰成功！</p>
+    </div>
+</div>
+
+
+
+
+@Html.ActionLink("回到開頭", "Index")

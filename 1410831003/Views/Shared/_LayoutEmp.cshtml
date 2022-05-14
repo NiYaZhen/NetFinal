@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不一樣的20歲</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-color:#FFFFFF">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <b>@Html.ActionLink("不一樣的20歲", "Index", "imgCarousel", new { area = "" }, new { @class = "navbar-brand" })</b>
+            </div>
+
+
+            <div class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("首頁", "Index", "imgCarousel")</li>
+                    <li>@Html.ActionLink("啟程", "Index", "moon")</li>
+                    <li>@Html.ActionLink("旅途", "Index", "trip")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">結尾<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("結尾", "Index", "exp")</li>
+                            <li>@Html.ActionLink("鴨鴨", "Index", "duck")</li>
+                            <li>@Html.ActionLink("給想環島的人", "Index", "note")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("留言板", "Index", "Guestbooks")</li>
+
+                </ul>
+                <form class="navbar-form navbar-right " role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" align="right">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>搜尋</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - 月の環島</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
